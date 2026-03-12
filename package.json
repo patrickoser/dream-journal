@@ -1,0 +1,15 @@
+{
+  "name": "reverie",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "mobile": "pnpm --filter mobile start",
+    "workers:dev": "pnpm --filter workers dev",
+    "workers:deploy": "pnpm --filter workers deploy",
+    "type-check": "pnpm -r type-check",
+    "lint": "pnpm -r lint"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

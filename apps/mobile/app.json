@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "Reverie",
+    "slug": "reverie",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "reverie",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#050510"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.reverie.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Reverie uses your camera to capture memories for your dream journal.",
+        "NSPhotoLibraryUsageDescription": "Reverie saves your dream images to your photo library.",
+        "NSPhotoLibraryAddUsageDescription": "Reverie saves generated dream images to your photo library."
+      }
+    },
+    "android": {
+      "package": "com.reverie.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#050510",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#c8a951",
+          "sounds": []
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
